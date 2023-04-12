@@ -1,0 +1,16 @@
+<div id="load-item" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+<form ng-submit="submit($event)" id="edit-item" class="form" action="{{action}}" method="patch">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name">
+    <label for="cost">Cost</label>
+    <input id="cost" type="number" name="cost" step="0.01">
+    <label for="description">Description</label>
+    <input id="description" type="text" name="description">
+    <label for="category">Category</label>
+    <input id="category" type="text" name="category">
+    <label for="imageUrl">Image URL</label>
+    <input id="imageUrl" type="text" name="imageUrl">
+    <button type="submit">Submit</button>
+    <a href="#!adminControls" class="router-link hoverable">Return to admin controls</a>
+</form>
