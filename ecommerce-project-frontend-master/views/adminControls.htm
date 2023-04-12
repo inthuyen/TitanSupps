@@ -1,0 +1,60 @@
+<header>
+    <h1>Titan Admin Controls</h1>
+</header>
+<h2>Catalog</h2>
+<table class="admin-table">
+    <tr id="catalog-table-header">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Image URL</th>
+        <th>Actions</th>
+    </tr>
+    <tr class="table-row-label">
+        <td colspan="5">Search Items</td>
+    </tr>
+    <tr>
+        <td>
+            <input id="search-name" type="text">
+        </td>
+        <td>
+            <input id="search-price" type="number" step="0.01">
+        </td>
+        <td>
+            <input id="search-category" type="text">
+        </td>
+        <td>
+            <input id="search-description" type="text">
+        </td>
+        <td>
+            <input id="search-image-url" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td id="searchItems" onclick="onCatalogItemSearch()" class="table-btn" colspan="5">Search Items</td>
+    </tr>
+    <tr class="table-row-label">
+        <td colspan="5">Add Item</td>
+    </tr>
+    <tr>
+        <td>
+            <input id="name" type="text">
+        </td>
+        <td>
+            <input id="price" type="number" step="0.01">
+        </td>
+        <td>
+            <input id="category" type="text">
+        </td>
+        <td>
+            <input id="description" type="text">
+        </td>
+        <td>
+            <input id="image-url" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td onclick="onCatalogItemSubmit()" class="table-btn" colspan="5">Add Item</td>
+    </tr>
+</table>
